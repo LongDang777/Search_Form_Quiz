@@ -1,0 +1,102 @@
+#search .row {
+  margin: 0;
+}
+
+#search a:hover {
+  color: initial;
+}
+
+#search tr:hover {
+  background-color: #f4f4f4;
+  color: initial;
+}
+
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.coatOfArms {
+  padding-left: 30px;
+}
+
+.region {
+  border-radius: 10px;
+  box-shadow: hsla(210, 8%, 62%, .2) 0px 8px 24px;
+  color: #fff;
+  padding: 8px 11px;
+}
+
+.region-select {
+  margin-left: 10px;
+  height: 100%;
+  padding: 10px 60px 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  border: 2px solid transparent;
+  color: var(--txt-color);
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s;
+}
+
+.region-select:focus {
+  outline: none;
+  border: none;
+  border: 2px solid var(--main-color);
+}
+
+button.btn-retry {
+  border: none !important;
+  outline: none;
+  border-radius: var(--border-radius);
+  display: block !important;
+  margin: 0 auto;
+  padding: 15px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  background-image: linear-gradient(to right, var(--main-color), var(--second-color));
+  color: var(--txt-white);
+}
+button.btn-retry:hover {
+  opacity: 0.7;
+}
+
+
+#search input:not(:placeholder-shown)~.bx-search {
+  display: none;
+}
+
+#search .bx-x {
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: var(--main-color);
+}
+
+#search .bx-x:hover {
+  color: red;
+}
+
+#search input:not(:placeholder-shown)~.bx-x {
+  display: block;
+}
+
+.card .img-notFound {
+  display: block;
+  margin: 0 auto;
+  height: 40%;
+  width: 40%;
+}
+
+tbody, tr, td, thead {
+  height: auto;
+  transition: all 1s;
+}
