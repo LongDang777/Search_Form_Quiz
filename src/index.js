@@ -12,7 +12,7 @@ document.title = "Week 6"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-  <Router>
+  <Router basename='/Search_Form_Quiz'>
     <App />
   </Router >
   // </React.StrictMode>

@@ -60,7 +60,7 @@ export default function ListPage() {
   useEffect(() => {
     fetchData(paramSearch);
   }, [location.search])
-
+  
   useEffect(() => {
     if (!paramSearch?._page) {
       pushLocation({ _page: 1 })
