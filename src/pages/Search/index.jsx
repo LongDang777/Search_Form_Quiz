@@ -10,7 +10,7 @@ export default function Search() {
   return (
     <Switch>
       <Route path={match.path} component={ListPage} exact/>
-      <Route path={`${match.params}/detail/:id`} component={Detail} exact/>
+      {/* <Route path={`${match.params}/detail/:id`} component={Detail} exact/> */}
     </Switch>
   )
 }

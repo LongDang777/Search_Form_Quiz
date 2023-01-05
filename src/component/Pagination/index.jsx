@@ -1,18 +1,26 @@
 /* eslint-disable eqeqeq */
 import QueryString from 'qs';
 import React from 'react'
-import { useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import { DOTS, usePagination } from '../../hooks/usePanigation';
 import './style.css'
 
 export default function Pagination(props) {
 
   const location = useLocation()
+  const history = useHistory()
+
+  if(!location.search){
+    history.push({
+      search: '_page=1'
+    })
+  }
 
   const params = QueryString.parse(location.search, {
     ignoreQueryPrefix: true
   })
 
+  
   let page = parseInt(params._page)
 
   const {

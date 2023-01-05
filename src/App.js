@@ -21,12 +21,7 @@ export default function App() {
             <Route exact path="/country" component={Search} />
             <Route exact path="/form" component={Form} />
             <Route exact path="/quiz" component={Quiz} />
-            {/* <Redirect from="home" to="/" exact />
-
-            <Route path="/todos" component={Todo} />
-            <Route path="/albums" component={AlbumFeature} /> */}
           </Switch>
-          {/* <Todo/> */}
         </div>
       </div>
     </div>
