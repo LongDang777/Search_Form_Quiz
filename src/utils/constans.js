@@ -1,17 +1,17 @@
 export const sidebarData = [
   {
       "display_name": "Search Filter",
-      "route": "/country",
+      "route": "/Search_Form_Quiz/country",
       "icon": "bx bx-search-alt"
   },
   {
       "display_name": "Registration Form",
-      "route": "/form",
+      "route": "/Search_Form_Quiz/form",
       "icon": "bx bx-user-pin"
   },
   {
       "display_name": "Quiz App",
-      "route": "/quiz",
+      "route": "/Search_Form_Quiz/quiz",
       "icon": "bx bx-package"
   },
 ]
