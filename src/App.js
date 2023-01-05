@@ -17,13 +17,14 @@ export default function App() {
       <div className="layout__content">
         <div className="layout__main">
           <Switch>
+            {/* <Redirect from="/" to="/country" exact /> */}
             <Route exact path="/country" component={Search} />
             <Route exact path="/form" component={Form} />
             <Route exact path="/quiz" component={Quiz} />
-            <Redirect from="home" to="/" exact />
+            {/* <Redirect from="home" to="/" exact />
 
             <Route path="/todos" component={Todo} />
-            <Route path="/albums" component={AlbumFeature} />
+            <Route path="/albums" component={AlbumFeature} /> */}
           </Switch>
           {/* <Todo/> */}
         </div>
