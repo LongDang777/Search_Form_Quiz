@@ -17,12 +17,10 @@ export default function App() {
       <div className="layout__content">
         <div className="layout__main">
           <Switch>
-            <Redirect from="/" to="/country" exact/>
+            <Redirect from="/Search_Form_Quiz/" to="/country" exact />
             <Route exact path="/country" component={Search} />
             <Route exact path="/form" component={Form} />
             <Route exact path="/quiz" component={Quiz} />
-            {/* <Route component={NotFound}/>  */}
-
             <Redirect from="home" to="/" exact />
 
             <Route path="/todos" component={Todo} />
