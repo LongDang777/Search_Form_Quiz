@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Search_Form_Quiz/static/css/main.07052a0b.css",
-    "main.js": "/Search_Form_Quiz/static/js/main.910894ef.js",
+    "main.js": "/Search_Form_Quiz/static/js/main.db008243.js",
     "static/js/787.feb8cbcf.chunk.js": "/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js",
     "static/media/boxicons.svg": "/Search_Form_Quiz/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
     "static/media/boxicons.eot": "/Search_Form_Quiz/static/media/boxicons.092b78589f3f53e60030.eot",
@@ -14,11 +14,11 @@
     "index.html": "/Search_Form_Quiz/index.html",
     "static/media/check.svg": "/Search_Form_Quiz/static/media/check.79f382fe1e0e93b104c1269175f3873e.svg",
     "main.07052a0b.css.map": "/Search_Form_Quiz/static/css/main.07052a0b.css.map",
-    "main.910894ef.js.map": "/Search_Form_Quiz/static/js/main.910894ef.js.map",
+    "main.db008243.js.map": "/Search_Form_Quiz/static/js/main.db008243.js.map",
     "787.feb8cbcf.chunk.js.map": "/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07052a0b.css",
-    "static/js/main.910894ef.js"
+    "static/js/main.db008243.js"
   ]
 }
