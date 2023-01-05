@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/LongDang777/Search_Form_Quiz/static/css/main.93e459f3.css",
+    "main.js": "/LongDang777/Search_Form_Quiz/static/js/main.b1022653.js",
+    "static/js/787.feb8cbcf.chunk.js": "/LongDang777/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js",
+    "static/media/boxicons.svg": "/LongDang777/Search_Form_Quiz/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
+    "static/media/boxicons.eot": "/LongDang777/Search_Form_Quiz/static/media/boxicons.092b78589f3f53e60030.eot",
+    "static/media/boxicons.woff": "/LongDang777/Search_Form_Quiz/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
+    "static/media/boxicons.ttf": "/LongDang777/Search_Form_Quiz/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
+    "static/media/notFound.svg": "/LongDang777/Search_Form_Quiz/static/media/notFound.de422c8b841d72ac677d310da476634a.svg",
+    "static/media/boxicons.woff2": "/LongDang777/Search_Form_Quiz/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/LD.jpg": "/LongDang777/Search_Form_Quiz/static/media/LD.fea14b3856c2e2d0dfa1.jpg",
+    "static/media/loading.gif": "/LongDang777/Search_Form_Quiz/static/media/loading.90aa511c08ad1c5c1ffc.gif",
+    "index.html": "/LongDang777/Search_Form_Quiz/index.html",
+    "static/media/check.svg": "/LongDang777/Search_Form_Quiz/static/media/check.79f382fe1e0e93b104c1269175f3873e.svg",
+    "main.93e459f3.css.map": "/LongDang777/Search_Form_Quiz/static/css/main.93e459f3.css.map",
+    "main.b1022653.js.map": "/LongDang777/Search_Form_Quiz/static/js/main.b1022653.js.map",
+    "787.feb8cbcf.chunk.js.map": "/LongDang777/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e459f3.css",
+    "static/js/main.b1022653.js"
+  ]
+}
