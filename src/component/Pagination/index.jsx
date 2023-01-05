@@ -23,6 +23,8 @@ export default function Pagination(props) {
   
   let page = parseInt(params._page)
 
+  console.log(page);
+
   const {
     onPageChange,
     totalCount,
