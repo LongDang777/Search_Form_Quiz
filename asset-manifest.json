@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/country/static/css/main.3a0e7f00.css",
-    "main.js": "/country/static/js/main.b7272cd3.js",
-    "static/js/787.feb8cbcf.chunk.js": "/country/static/js/787.feb8cbcf.chunk.js",
-    "static/media/boxicons.svg": "/country/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
-    "static/media/boxicons.eot": "/country/static/media/boxicons.092b78589f3f53e60030.eot",
-    "static/media/boxicons.woff": "/country/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
-    "static/media/boxicons.ttf": "/country/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
-    "static/media/notFound.svg": "/country/static/media/notFound.de422c8b841d72ac677d310da476634a.svg",
-    "static/media/boxicons.woff2": "/country/static/media/boxicons.8d765747a5588f36ff61.woff2",
-    "static/media/LD.jpg": "/country/static/media/LD.fea14b3856c2e2d0dfa1.jpg",
-    "static/media/loading.gif": "/country/static/media/loading.90aa511c08ad1c5c1ffc.gif",
-    "index.html": "/country/index.html",
-    "static/media/check.svg": "/country/static/media/check.79f382fe1e0e93b104c1269175f3873e.svg",
-    "main.3a0e7f00.css.map": "/country/static/css/main.3a0e7f00.css.map",
-    "main.b7272cd3.js.map": "/country/static/js/main.b7272cd3.js.map",
-    "787.feb8cbcf.chunk.js.map": "/country/static/js/787.feb8cbcf.chunk.js.map"
+    "main.css": "/Search_Form_Quiz/static/css/main.07052a0b.css",
+    "main.js": "/Search_Form_Quiz/static/js/main.2738ece4.js",
+    "static/js/787.feb8cbcf.chunk.js": "/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js",
+    "static/media/boxicons.svg": "/Search_Form_Quiz/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
+    "static/media/boxicons.eot": "/Search_Form_Quiz/static/media/boxicons.092b78589f3f53e60030.eot",
+    "static/media/boxicons.woff": "/Search_Form_Quiz/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
+    "static/media/boxicons.ttf": "/Search_Form_Quiz/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
+    "static/media/notFound.svg": "/Search_Form_Quiz/static/media/notFound.de422c8b841d72ac677d310da476634a.svg",
+    "static/media/boxicons.woff2": "/Search_Form_Quiz/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/LD.jpg": "/Search_Form_Quiz/static/media/LD.fea14b3856c2e2d0dfa1.jpg",
+    "static/media/loading.gif": "/Search_Form_Quiz/static/media/loading.90aa511c08ad1c5c1ffc.gif",
+    "index.html": "/Search_Form_Quiz/index.html",
+    "static/media/check.svg": "/Search_Form_Quiz/static/media/check.79f382fe1e0e93b104c1269175f3873e.svg",
+    "main.07052a0b.css.map": "/Search_Form_Quiz/static/css/main.07052a0b.css.map",
+    "main.2738ece4.js.map": "/Search_Form_Quiz/static/js/main.2738ece4.js.map",
+    "787.feb8cbcf.chunk.js.map": "/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a0e7f00.css",
-    "static/js/main.b7272cd3.js"
+    "static/css/main.07052a0b.css",
+    "static/js/main.2738ece4.js"
   ]
 }
