@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Search_Form_Quiz/static/css/main.07052a0b.css",
-    "main.js": "/Search_Form_Quiz/static/js/main.16a3b837.js",
+    "main.css": "/Search_Form_Quiz/static/css/main.10b2a875.css",
+    "main.js": "/Search_Form_Quiz/static/js/main.d79ab298.js",
     "static/js/787.feb8cbcf.chunk.js": "/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js",
     "static/media/boxicons.svg": "/Search_Form_Quiz/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
     "static/media/boxicons.eot": "/Search_Form_Quiz/static/media/boxicons.092b78589f3f53e60030.eot",
@@ -11,14 +11,15 @@
     "static/media/boxicons.woff2": "/Search_Form_Quiz/static/media/boxicons.8d765747a5588f36ff61.woff2",
     "static/media/LD.jpg": "/Search_Form_Quiz/static/media/LD.fea14b3856c2e2d0dfa1.jpg",
     "static/media/loading.gif": "/Search_Form_Quiz/static/media/loading.90aa511c08ad1c5c1ffc.gif",
+    "static/media/Moon.svg": "/Search_Form_Quiz/static/media/Moon.ba8fe26b39d0bf789aae.svg",
     "index.html": "/Search_Form_Quiz/index.html",
     "static/media/check.svg": "/Search_Form_Quiz/static/media/check.79f382fe1e0e93b104c1269175f3873e.svg",
-    "main.07052a0b.css.map": "/Search_Form_Quiz/static/css/main.07052a0b.css.map",
-    "main.16a3b837.js.map": "/Search_Form_Quiz/static/js/main.16a3b837.js.map",
+    "main.10b2a875.css.map": "/Search_Form_Quiz/static/css/main.10b2a875.css.map",
+    "main.d79ab298.js.map": "/Search_Form_Quiz/static/js/main.d79ab298.js.map",
     "787.feb8cbcf.chunk.js.map": "/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07052a0b.css",
-    "static/js/main.16a3b837.js"
+    "static/css/main.10b2a875.css",
+    "static/js/main.d79ab298.js"
   ]
 }
