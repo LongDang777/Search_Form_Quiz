@@ -207,10 +207,11 @@ export default function ListPage() {
             {region}
           </span>
         </td>
-        <td>{timezones} </td>
+        <td title={timezones}>{timezones}</td>
         <td
           onClick={() => openInNewTab(maps.googleMaps)}
           style={{ cursor: "pointer" }}
+          title={maps.googleMaps}
         >
           {maps.googleMaps}
         </td>

@@ -65,6 +65,7 @@ button.btn-retry {
   background-image: linear-gradient(to right, var(--main-color), var(--second-color));
   color: var(--txt-white);
 }
+
 button.btn-retry:hover {
   opacity: 0.7;
 }
@@ -96,7 +97,14 @@ button.btn-retry:hover {
   width: 40%;
 }
 
-tbody, tr, td, thead {
+tbody,
+tr,
+td,
+thead {
   height: auto;
   transition: all 1s;
+}
+
+td {
+  position: relative;
 }
