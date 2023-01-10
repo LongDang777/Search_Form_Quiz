@@ -10,6 +10,37 @@ import Table from "../../../component/table/Table";
 import '../../../component/Topnav/topnav.css';
 import "../style.css";
 
+const optionRegion = [
+  {
+    id: 0,
+    region: "All"
+  },
+  {
+    id: 1,
+    region: "Africa"
+  },
+  {
+    id: 2,
+    region: "Americas"
+  },
+  {
+    id: 3,
+    region: "Asia"
+  },
+  {
+    id: 4,
+    region: "Antarctic"
+  },
+  {
+    id: 5,
+    region: "Europe"
+  },
+  {
+    id: 6,
+    region: "Oceania"
+  }
+]
+
 export default function ListPage() {
   const history = useHistory();
   const location = useLocation()
@@ -22,36 +53,7 @@ export default function ListPage() {
   const requestUrl = "https://country-api-orcin-nu.vercel.app/all";
   const messageError = notFound
 
-  const optionRegion = [
-    {
-      id: 0,
-      region: "All"
-    },
-    {
-      id: 1,
-      region: "Africa"
-    },
-    {
-      id: 2,
-      region: "Americas"
-    },
-    {
-      id: 3,
-      region: "Asia"
-    },
-    {
-      id: 4,
-      region: "Antarctic"
-    },
-    {
-      id: 5,
-      region: "Europe"
-    },
-    {
-      id: 6,
-      region: "Oceania"
-    }
-  ]
+  
 
   const paramSearch = QueryString.parse(location.search, {
     ignoreQueryPrefix: true
