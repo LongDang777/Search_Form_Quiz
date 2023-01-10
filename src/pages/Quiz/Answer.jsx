@@ -6,11 +6,11 @@ export default function Answer({ length }) {
 
   let rate = (result?.exact * 100) / length
 
-  const value = JSON.parse(localStorage.getItem('result'));
+  const value = JSON.parse(localStorage.getItem('result')) || {};
+
   useEffect(() => {
     value && setResult(value);
-  }, [value.exact])
-
+  }, [value?.exact])
 
   return (
     <div id="quizResult">

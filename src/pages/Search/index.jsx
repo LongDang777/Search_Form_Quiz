@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
-import Detail from './Detail'
 import ListPage from './ListPage'
 
 export default function Search() {

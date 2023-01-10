@@ -5,6 +5,7 @@ import MultiQuetion from './MultiQuetion'
 export default function QuestionList({ data }) {
 
   const [result, setResult] = useState({})
+  
   const count = {
     exact: 0,
     wrong: 0
