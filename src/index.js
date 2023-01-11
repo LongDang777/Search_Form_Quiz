@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import App from './App';
 import './asset/boxicons-2.0.7/css/boxicons.min.css';
 import './asset/css/grid.css';
@@ -12,8 +12,8 @@ document.title = "Week 6"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-  <Router basename='/Search_Form_Quiz'>
-    <App />
+  <Router>
+    < App />
   </Router >
   // </React.StrictMode>
 );
