@@ -19,11 +19,8 @@ export default function Pagination(props) {
   const params = QueryString.parse(location.search, {
     ignoreQueryPrefix: true
   })
-
   
   let page = parseInt(params._page)
-
-  console.log(page);
 
   const {
     onPageChange,

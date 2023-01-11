@@ -3,6 +3,7 @@ import FormInput from "./FormInput";
 import "./style.css";
 import { ReactComponent as Check } from '../../asset/images/check.svg'
 import loadingGif from '../../asset/images/loading.gif'
+import { useRouteMatch } from "react-router-dom";
 
 export default function Form() {
 
@@ -14,6 +15,8 @@ export default function Form() {
     message: false,
     loading: false,
   }
+
+  const match = useRouteMatch()
 
   const [values, setValues] = useState(inputValue)
 
