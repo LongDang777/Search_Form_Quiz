@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 export default function Answer({ length }) {
 
   const [result, setResult] = useState()
@@ -11,6 +12,10 @@ export default function Answer({ length }) {
   useEffect(() => {
     value && setResult(value);
   }, [value?.exact])
+
+  const resetForm = () => {
+    document.getElementById("quizlist").reset()
+  }
 
   return (
     <div id="quizResult">
@@ -29,7 +34,7 @@ export default function Answer({ length }) {
             </div>
           </div>
           <div className="quiz__footer text-center">
-            <a id="testAgain" href="/quiz" className="quiz__btn">Test Again</a>
+            <Link to="/quiz" className="quiz__btn">Test Again</Link>
           </div>
         </div>
       </div>

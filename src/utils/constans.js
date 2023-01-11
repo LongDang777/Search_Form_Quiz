@@ -1,4 +1,4 @@
-export const sidebarData = [
+export const  sidebarData = [
   {
       "display_name": "Search Filter",
       "route": "/",

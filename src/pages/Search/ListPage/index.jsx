@@ -53,8 +53,6 @@ export default function ListPage() {
   const requestUrl = "https://country-api-orcin-nu.vercel.app/all";
   const messageError = notFound
 
-  
-
   const paramSearch = QueryString.parse(location.search, {
     ignoreQueryPrefix: true
   })
