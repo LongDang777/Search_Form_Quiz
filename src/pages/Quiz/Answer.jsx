@@ -34,7 +34,7 @@ export default function Answer({ length }) {
             </div>
           </div>
           <div className="quiz__footer text-center">
-            <Link to="/quiz" className="quiz__btn">Test Again</Link>
+            <a href="/quiz" className="quiz__btn">Test Again</a>
           </div>
         </div>
       </div>

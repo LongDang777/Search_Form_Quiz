@@ -35,8 +35,10 @@ a {
 }
 
 #mainApp h1 {
-  text-align: center;
   padding-top: 20px;
+  position: fixed;
+  left: 50%;
+  z-index: 5;
 }
 
 .quizSection {
@@ -162,10 +164,10 @@ label {
   color: #495057;
   background-clip: padding-box;
   border-radius: 0.25rem;
-  
+
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.2);
-  
+
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
