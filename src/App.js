@@ -6,7 +6,6 @@ import Form from './pages/Form';
 import Quiz from './pages/Quiz';
 import Search from './pages/Search';
 
-
 export default function App() {
   return (
     <div className='layout'>

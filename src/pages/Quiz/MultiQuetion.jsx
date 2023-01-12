@@ -2,8 +2,6 @@ import React from 'react'
 
 export default function MultiQuetion({ answers, number, checkAns }) {
 
-  
-
   return (
     <>
       {
