@@ -13,9 +13,6 @@ export default function Answer({ length }) {
     value && setResult(value);
   }, [value?.exact])
 
-  const resetForm = () => {
-    document.getElementById("quizlist").reset()
-  }
 
   return (
     <div id="quizResult">

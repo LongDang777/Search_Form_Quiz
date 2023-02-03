@@ -8,6 +8,8 @@ const url = 'https://questiton-online.vercel.app/all'
 
 export default function Quiz() {
 
+  document.title = 'Quiz Question'
+
   const res = useFetch(url)
   const data = res?.response;
 

@@ -62,9 +62,7 @@ export default function Search() {
   }, [location.search])
   
   useEffect(() => {
-    if (!paramSearch?._page) {
-      pushLocation({ _page: 1 })
-    }
+    !paramSearch?._page && pushLocation({ _page: 1 })
   }, [])
 
   const fetchData = async (paramsSearch) => {
@@ -89,7 +87,6 @@ export default function Search() {
   };
 
   const pushLocation = (value) => {
-    const params = QueryString.parse(location.search.substring(1))
     const newParams = QueryString.stringify({ ...params, ...value })
     history.push({
       search: newParams
