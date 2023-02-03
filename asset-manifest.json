@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Search_Form_Quiz/static/css/main.4bdfd72d.css",
-    "main.js": "/Search_Form_Quiz/static/js/main.e704f7cc.js",
+    "main.css": "/Search_Form_Quiz/static/css/main.a89249cd.css",
+    "main.js": "/Search_Form_Quiz/static/js/main.cad71b67.js",
     "static/js/787.feb8cbcf.chunk.js": "/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js",
     "static/media/boxicons.svg": "/Search_Form_Quiz/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
     "static/media/boxicons.eot": "/Search_Form_Quiz/static/media/boxicons.092b78589f3f53e60030.eot",
@@ -9,17 +9,20 @@
     "static/media/boxicons.ttf": "/Search_Form_Quiz/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
     "static/media/notFound.svg": "/Search_Form_Quiz/static/media/notFound.de422c8b841d72ac677d310da476634a.svg",
     "static/media/boxicons.woff2": "/Search_Form_Quiz/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/logo.svg": "/Search_Form_Quiz/static/media/logo.cd046e1a495c96cce5951c2e227306cf.svg",
     "static/media/LD.jpg": "/Search_Form_Quiz/static/media/LD.fea14b3856c2e2d0dfa1.jpg",
+    "static/media/register.svg": "/Search_Form_Quiz/static/media/register.270edb260578be66d92f3ad0f04b50ab.svg",
     "static/media/loading.gif": "/Search_Form_Quiz/static/media/loading.90aa511c08ad1c5c1ffc.gif",
+    "static/media/loading.webp": "/Search_Form_Quiz/static/media/loading.4131ea93382410d8573b.webp",
     "static/media/Moon.svg": "/Search_Form_Quiz/static/media/Moon.ba8fe26b39d0bf789aae.svg",
     "index.html": "/Search_Form_Quiz/index.html",
-    "static/media/check.svg": "/Search_Form_Quiz/static/media/check.79f382fe1e0e93b104c1269175f3873e.svg",
-    "main.4bdfd72d.css.map": "/Search_Form_Quiz/static/css/main.4bdfd72d.css.map",
-    "main.e704f7cc.js.map": "/Search_Form_Quiz/static/js/main.e704f7cc.js.map",
+    "static/media/check.svg": "/Search_Form_Quiz/static/media/check.3651f9c75895d87dc8f5e095d21029b3.svg",
+    "main.a89249cd.css.map": "/Search_Form_Quiz/static/css/main.a89249cd.css.map",
+    "main.cad71b67.js.map": "/Search_Form_Quiz/static/js/main.cad71b67.js.map",
     "787.feb8cbcf.chunk.js.map": "/Search_Form_Quiz/static/js/787.feb8cbcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bdfd72d.css",
-    "static/js/main.e704f7cc.js"
+    "static/css/main.a89249cd.css",
+    "static/js/main.cad71b67.js"
   ]
 }
