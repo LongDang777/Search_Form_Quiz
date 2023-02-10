@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useFetch } from '../../hooks/useFetch'
 import Answer from './Answer'
 import QuestionList from './QuestionList'
@@ -10,6 +10,9 @@ export default function Quiz() {
 
   document.title = 'Quiz Question'
 
+  const [showAns, setShowAns] = useState(true)
+
+
   const res = useFetch(url)
   const data = res?.response;
 
@@ -17,8 +20,7 @@ export default function Quiz() {
     <div id='mainApp'>
       <h1>Quiz Question</h1>
       <div id='quizlist'>
-        <QuestionList data={data} />
-        <Answer length={data?.length} />
+        {showAns ? <QuestionList data={data} setShowAns={setShowAns} /> : <Answer length={data?.length} />}
       </div>
     </div>
   )

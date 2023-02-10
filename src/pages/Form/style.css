@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
@@ -30,7 +29,7 @@ input {
 
 .signin-signup {
   position: absolute;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -50%);
   left: 75%;
   width: 50%;
@@ -67,20 +66,40 @@ form.sign-in-form {
   margin-bottom: 10px;
 }
 
-.input-content {
+.input-field {
   max-width: 380px;
   width: 100%;
-}
-
-.input-field {
   background-color: #f0f0f0;
   margin: 10px 0;
   height: 55px;
   border-radius: 55px;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 15% 75% 10%;
   padding: 0 0.4rem;
   position: relative;
+}
+
+.input-field .bx-x {
+  display: none;
+}
+
+.input-field .icon-eye,
+.input-field .bx-x {
+  order: 3;
+  cursor: pointer;
+}
+
+.bxs-show {
+  color: #04befe !important;
+}
+
+.input-field input:not(:placeholder-shown)~.bx-x {
+  display: block;
+  color: #04befe;
+}
+
+.input-field input:not(:focus)~.bx-x {
+  opacity: 0;
 }
 
 .input-field i {
@@ -88,12 +107,7 @@ form.sign-in-form {
   line-height: 55px;
   color: #acacac;
   transition: 0.5s;
-  font-size: 1.2rem;
-}
-
-.input .bx-x-circle:hover,
-.input .bx-x-circle:active {
-  color: #ff4444;
+  font-size: 1.4rem;
 }
 
 .input-field input {
@@ -101,16 +115,11 @@ form.sign-in-form {
   outline: none;
   border: none;
   line-height: 1;
-  font-weight: 500;
-  font-size: 1rem;
-  padding-right: 50px;
-  color: #333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333 !important;
+  padding-right: 10px;
   order: 2;
-}
-
-.input-field input::placeholder {
-  color: #aaa;
-  font-weight: 500;
 }
 
 .input-field input:focus {
@@ -121,46 +130,17 @@ form.sign-in-form {
   color: #04befe;
 }
 
-.input-field input~.bx.bx-x,
-.input-field input~.bx.bx-check {
-  position: absolute;
-  right: 10px;
-  cursor: pointer;
-  transition: all 0.2s 0.7s;
-  display: none;
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
 }
 
-.bx-x {
-  color: red !important;
-}
-
-.bx-check {
-  color: #04befe !important;
-}
-
-.input-field input:not(:placeholder-shown)~.bx-x {
-  display: block;
-}
-
-.input-field input:not(:placeholder-shown)~.bx-x-circle {
-  display: block;
-}
-
-.errorMessage {
-  color: #ff4444;
-  font-size: 12px;
-}
-
-.sign-up-form .input-field:nth-of-type(3) .error-input {
-  bottom: -30px;
-}
-
-.input-field input:invalid~.bx-x-circle {
-  color: #ff4444;
-}
-
-.input-field input:valid~.bx-x-circle {
-  display: none;
+.error {
+  color: rgb(247, 40, 3);
+  font-size: 14px;
+  max-width: 380px;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .social-text {
@@ -206,10 +186,6 @@ form.sign-in-form {
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
-}
-
-.btn[value='Register'] {
-  margin-top: 25px;
 }
 
 .btn:hover {
@@ -298,41 +274,35 @@ form.sign-in-form {
 }
 
 .success {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0rem 5rem;
+  position: absolute;
+  top: -2rem;
   transition: all 0.2s 0.7s;
   overflow: hidden;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  text-align: center;
+  z-index: 5;
 }
-
 .success img {
   width: 100%;
 }
-
-.btn-close {
-  margin-right: 20px;
-  color: #5995fd;
-  background-color: transparent;
-  border: solid 2px #5995fd;
+.success .btn-close {
+  background-color: #fff;
+  color: #4481eb;
+  border: 1px solid currentColor;
+  margin-right: 15px;
 }
 
-.btn-close:hover {
-  background-color: #5995fd;
-  color: #fff;
+.success .btn-close:hover {
+  background-color: #4481eb;
+    color: #fff;
 }
 
-.btn:active {
+.success .btn-close:active {
   opacity: 0.8;
 }
 
-.loading {
-  width: 30% !important;
+.success .loading {
+  mix-blend-mode: color-burn;
 }
-
 /* ANIMATION */
 
 .container.sign-up-mode:before {
@@ -343,11 +313,6 @@ form.sign-in-form {
 .container.sign-up-mode .left-panel .image,
 .container.sign-up-mode .left-panel .content {
   transform: translateX(-800px);
-}
-
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
-  transform: translateX(0%);
 }
 
 .container.sign-up-mode .signin-signup {
@@ -364,6 +329,11 @@ form.sign-in-form {
   z-index: 1;
 }
 
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content {
+  transform: translateX(0%);
+}
+
 .container.sign-up-mode .left-panel {
   pointer-events: none;
 }
@@ -371,17 +341,6 @@ form.sign-in-form {
 .container.sign-up-mode .right-panel {
   pointer-events: all;
 }
-
-.container.sign-up-mode .success {
-  opacity: 1;
-  z-index: 2;
-}
-
-.signin-signup .success {
-  opacity: 0;
-  z-index: 1;
-}
-
 
 @media (max-width: 870px) {
   .container {
@@ -484,38 +443,6 @@ form.sign-in-form {
   .container.sign-up-mode .signin-signup {
     top: 5%;
     transform: translate(-50%, 0);
-  }
-
-
-
-  .form-success {
-    display: grid;
-    justify-items: center;
-  }
-
-  .form-success h3 {
-    font-weight: normal;
-    margin: 20px 0 80px 0;
-  }
-
-  .form-success .check-icon {
-    height: 130px;
-    width: 130px;
-    color: #00cca7;
-  }
-
-  .form-success .btn {
-    margin: 80px 0;
-    border-radius: 10px;
-    background-color: #00cca7;
-    text-transform: lowercase;
-    font-weight: normal;
-    font-size: 20px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
-
-  .form-success .btn:hover {
-    background-color: #00cca7c7
   }
 }
 

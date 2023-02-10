@@ -3,7 +3,7 @@ import axios from "axios";
 import QueryString from "qs";
 import React, { useEffect, useRef, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
-import loadingImg from "../../asset/images/loading.gif";
+import loadingImg from "../../asset/images/loadingGif.gif";
 import notFound from '../../asset/images/notFound.svg';
 import Pagination from "../../component/Pagination";
 import Table from "../../component/table/Table";
@@ -53,16 +53,12 @@ export default function Search() {
   const requestUrl = "https://country-api-orcin-nu.vercel.app/all";
   const messageError = notFound
 
-  const paramSearch = QueryString.parse(location.search, {
-    ignoreQueryPrefix: true
-  })
+  useEffect(() => {
+    fetchData(params);
+  }, [location.search])
 
   useEffect(() => {
-    fetchData(paramSearch);
-  }, [location.search])
-  
-  useEffect(() => {
-    !paramSearch?._page && pushLocation({ _page: 1 })
+    !params?._page && pushLocation({ _page: 1 })
   }, [])
 
   const fetchData = async (paramsSearch) => {
@@ -75,7 +71,6 @@ export default function Search() {
           _limit: 10
         }
       });
-
       setData(result.data);
       setTotal(result.headers['x-total-count'])
       result.data.length === 0 && setError(messageError)
@@ -85,6 +80,10 @@ export default function Search() {
       setLoading(false);
     }
   };
+
+  const params = QueryString.parse(location.search, {
+    ignoreQueryPrefix: true
+  })
 
   const pushLocation = (value) => {
     const newParams = QueryString.stringify({ ...params, ...value })
@@ -100,7 +99,6 @@ export default function Search() {
   const handleFilter = (e) => {
     const value = e.target.value;
     if (value === 'All') {
-      const params = QueryString.parse(location.search.substring(1))
       delete params.region;
       history.push({
         search: QueryString.stringify({ ...params, _page: 1 })
@@ -138,9 +136,6 @@ export default function Search() {
               onClick={() => {
                 inputRef.current.value = ''
                 inputRef.current.focus()
-                const params = QueryString.parse(location.search, {
-                  ignoreQueryPrefix: true
-                });
                 delete params.q;
                 history.push({
                   search: QueryString.stringify({ params, _page: 1 })
@@ -167,11 +162,11 @@ export default function Search() {
       )
     }
   }
-  
-  let number = +paramSearch?._page
 
-  if(number > 1){
-    number = (+paramSearch?._page * 10) - 9
+  let number = +params?._page
+
+  if (number > 1) {
+    number = (+params?._page * 10) - 9
   }
 
   const renderBody = (item, index) => {
@@ -219,10 +214,6 @@ export default function Search() {
       </tr>
     );
   };
-
-  const params = QueryString.parse(location.search, {
-    ignoreQueryPrefix: true
-  })
 
   return (
     <div id="search">

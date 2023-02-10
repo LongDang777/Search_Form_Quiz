@@ -13,9 +13,9 @@ export default function App() {
       <div className="layout__content">
         <div className="layout__main">
           <Switch>
+            <Route exact path="/" component={Search} />
             <Route exact path="/form" component={Form} />
             <Route exact path="/quiz" component={Quiz} />
-            <Route path="/" component={Search} />
           </Switch>
         </div>
       </div>

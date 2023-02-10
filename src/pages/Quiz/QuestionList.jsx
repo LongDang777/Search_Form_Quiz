@@ -1,21 +1,33 @@
-import React, { useState } from 'react'
+import React, { Fragment, useEffect, useRef, useState } from 'react'
 import FillInBlank from './FillInBlank'
 import MultiQuetion from './MultiQuetion'
+import loading from '../../asset/images/loadingGif.gif'
 
-export default function QuestionList({ data }) {
+export default function QuestionList({ data, setShowAns }) {
 
   const [result, setResult] = useState({})
-  
-  const count = {
+  const questionRef = useRef()
+  const [currentQues, setCurrentQues] = useState(0)
+  const [loading, setLoading] = useState(true)
+
+  const resultAns = {
     exact: 0,
     wrong: 0
   }
 
+  useEffect(() => {
+    questionRef.current.style.transform = `translateY(${-currentQues * 100}%)`
+  }, [currentQues])
+
+
   const showAns = () => {
-    for (let ques in result) {
-      result[ques] ? count.exact++ : count.wrong++
+    for (let ans in result) {
+      result[ans] ? resultAns.exact++ : resultAns.wrong++
     }
-    localStorage.setItem('result', JSON.stringify(count))
+    setTimeout(() => {
+      setShowAns(prev => !prev)
+    }, [1000])
+    localStorage.setItem('result', JSON.stringify(resultAns))
   }
 
   const checkAns = (e, exact, content) => {
@@ -39,21 +51,29 @@ export default function QuestionList({ data }) {
     }
   }
 
+  const nextQuestion = () => {
+    setCurrentQues(ques => ques + 1)
+  }
+
+  let location = 0;
+
   return (
-    <>
+    <div className='question_content' ref={questionRef}>
       {data?.map((question, index) => {
         const { id, questionType, content, answers } = question;
-
         const btnNext = () => {
           if (index < data.length - 1) {
-            return <a href={`#quiz-${data[index + 1].id}`} className="quiz__btn quiz__next">NEXT</a>;
+            return (
+              <Fragment>
+                <button className="quiz__btn quiz__next" onClick={nextQuestion}>NEXT</button>
+              </Fragment>
+            );
           } else {
-            return <a href="#quizResult" className="quiz__btn quiz__next" onClick={showAns}>SUBMIT</a>;
+            return <button href="#quizResult" className="quiz__btn quiz__next" onClick={showAns}>SUBMIT</button>;
           }
         }
-
         return (
-          <div key={id} className="quizSection" id={`quiz-${id}`}>
+          <div key={id} className="quizSection" id={`quiz-${id}`} style={{ bottom: `-${location++ * 100}%` }}>
             <div className="quiz__main">
               <div className="quiz__header">
                 <p>{content}</p>
@@ -71,6 +91,6 @@ export default function QuestionList({ data }) {
           </div>
         )
       })}
-    </>
+    </div>
   )
 }

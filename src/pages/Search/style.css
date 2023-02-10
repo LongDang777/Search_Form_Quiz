@@ -11,14 +11,11 @@
   color: initial;
 }
 
-
-.loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
+#search .loading {
+  height: 70vh;
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: darken;
 }
 
 .coatOfArms {
